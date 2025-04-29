@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Games - Eqic Games</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Eqic Games Logo" class="logo">
+                </a>
+                <h1>Eqic Games</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-item">Create</a>
+                <a href="explore.html" class="nav-item active">Explore</a>
+                <a href="marketplace.html" class="nav-item">Marketplace</a>
+                <a href="dashboard.html" class="nav-item">Dashboard</a>
+                <a href="governance.html" class="nav-item">Governance</a>
+            </nav>
+            
+            <div class="wallet-connect">
+                <button id="connectWalletBtn" class="btn btn-primary btn-small">Connect Wallet</button>
+                <div id="walletInfo" class="wallet-status" style="display: none;">
+                    <div id="walletIndicator" class="wallet-indicator wallet-disconnected"></div>
+                    <span id="walletAddress" class="wallet-address">Not connected</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2>Discover Chain Games</h2>
+                    <p>Explore the latest games created with the Eqic MCP Protocol and play across ecosystems</p>
+                </div>
+                
+                <div class="hero-search">
+                    <input type="text" id="gameSearchInput" class="form-control" placeholder="Search games by name, genre, or creator">
+                    <button id="searchBtn" class="btn btn-primary">Search</button>
+                </div>
+            </section>
+            
+            <section class="filters-section">
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Genre</label>
+                        <select id="genreFilter" class="form-control">
+                            <option value="all">All Genres</option>
+                            <option value="rpg">RPG</option>
+                            <option value="competitive">Competitive</option>
+                            <option value="sandbox">Sandbox</option>
+                            <option value="strategy">Strategy</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Complexity</label>
+                        <select id="complexityFilter" class="form-control">
+                            <option value="all">All Levels</option>
+                            <option value="simple">Simple</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="complex">Complex</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Sort By</label>
+                        <select id="sortFilter" class="form-control">
+                            <option value="newest">Newest</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="played">Most Played</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Platform</label>
+                        <select id="platformFilter" class="form-control">
+                            <option value="all">All Platforms</option>
+                            <option value="web3">Web3 Only</option>
+                            <option value="pc">PC Compatible</option>
+                            <option value="mobile">Mobile Compatible</option>
+                            <option value="console">Console Compatible</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="active-filters" id="activeFilters">
+                    <!-- Active filters will be added here dynamically -->
+                </div>
+            </section>
+            
+            <section class="featured-games">
+                <h3>Featured Games</h3>
+                <div class="featured-slider">
+                    <div class="featured-game">
+                        <div class="featured-game-image">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Featured Game">
+                        </div>
+                        <div class="featured-game-content">
+                            <h4>Stellar Odyssey</h4>
+                            <p>An immersive space exploration RPG with complex ship customization and planetary landing mechanics.</p>
+                            <div class="featured-game-meta">
+                                <span class="badge badge-primary">RPG</span>
+                                <span class="badge badge-secondary">Complex</span>
+                                <span class="badge badge-secondary">PC Compatible</span>
+                            </div>
+                            <button class="btn btn-primary">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="games-grid-section">
+                <h3>All Games</h3>
+                <div class="game-grid" id="gamesGrid">
+                    <!-- Game cards will be added here dynamically -->
+                    
+                    <!-- Sample game card 1 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Game 1">
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Stellar Odyssey</h4>
+                            <p class="game-creator">by CryptoCreator.eth</p>
+                            <div class="game-meta">
+                                <span class="game-genre">RPG</span>
+                                <div class="game-rating">
+                                    <span>★★★★☆</span>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <p class="game-description">An immersive space exploration RPG with complex ship customization and planetary landing mechanics.</p>
+                            <div class="game-stats">
+                                <div class="game-stat">
+                                    <div class="game-stat-value">2.5k</div>
+                                    <div class="game-stat-label">Players</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">320</div>
+                                    <div class="game-stat-label">Assets</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">15.2k</div>
+                                    <div class="game-stat-label">$EQIC Volume</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sample game card 2 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://images.unsplash.com/photo-1556035511-3168381ea4d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Game 2">
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Cyber Racer</h4>
+                            <p class="game-creator">by RacingDev</p>
+                            <div class="game-meta">
+                                <span class="game-genre">Competitive</span>
+                                <div class="game-rating">
+                                    <span>★★★★★</span>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p class="game-description">A fast-paced racing game set in a cyberpunk city with high-stakes tournaments and vehicle customization.</p>
+                            <div class="game-stats">
+                                <div class="game-stat">
+                                    <div class="game-stat-value">5.7k</div>
+                                    <div class="game-stat-label">Players</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">250</div>
+                                    <div class="game-stat-label">Assets</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">28.6k</div>
+                                    <div class="game-stat-label">$EQIC Volume</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sample game card 3 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://images.unsplash.com/photo-1541928706-2801505cbe72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Game 3">
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Boundless Realm</h4>
+                            <p class="game-creator">by WorldBuilder</p>
+                            <div class="game-meta">
+                                <span class="game-genre">Sandbox</span>
+                                <div class="game-rating">
+                                    <span>★★★★☆</span>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="game-description">A limitless sandbox experience where players can build, craft, and explore procedurally generated worlds.</p>
+                            <div class="game-stats">
+                                <div class="game-stat">
+                                    <div class="game-stat-value">3.2k</div>
+                                    <div class="game-stat-label">Players</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">1.2k</div>
+                                    <div class="game-stat-label">Assets</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">19.5k</div>
+                                    <div class="game-stat-label">$EQIC Volume</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sample game card 4 -->
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://images.unsplash.com/photo-1559638753-d8ffa15efd43?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Game 4">
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Throne of Empires</h4>
+                            <p class="game-creator">by StrategyMaster</p>
+                            <div class="game-meta">
+                                <span class="game-genre">Strategy</span>
+                                <div class="game-rating">
+                                    <span>★★★★☆</span>
+                                    <span>4.1</span>
+                                </div>
+                            </div>
+                            <p class="game-description">A deep strategic challenge where players build empires, form alliances, and conquer territories.</p>
+                            <div class="game-stats">
+                                <div class="game-stat">
+                                    <div class="game-stat-value">1.8k</div>
+                                    <div class="game-stat-label">Players</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">420</div>
+                                    <div class="game-stat-label">Assets</div>
+                                </div>
+                                <div class="game-stat">
+                                    <div class="game-stat-value">12.3k</div>
+                                    <div class="game-stat-label">$EQIC Volume</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <button class="btn btn-secondary btn-small">Previous</button>
+                    <div class="pagination-numbers">
+                        <span class="pagination-number active">1</span>
+                        <span class="pagination-number">2</span>
+                        <span class="pagination-number">3</span>
+                        <span class="pagination-number">...</span>
+                        <span class="pagination-number">10</span>
+                    </div>
+                    <button class="btn btn-secondary btn-small">Next</button>
+                </div>
+            </section>
+            
+            <section class="a2a-section">
+                <h3>A2A Protocol Integration</h3>
+                <p>Play chain games across ecosystems through the A2A Protocol</p>
+                
+                <div class="a2a-platforms">
+                    <div class="a2a-platform">
+                        <div class="a2a-platform-icon">
+                            <img src="../assets/images/pc-icon.png" alt="PC">
+                        </div>
+                        <h4>PC Gaming</h4>
+                        <p>Play Eqic chain games on your PC through the A2A Protocol bridge</p>
+                        <button class="btn btn-secondary btn-small">Download Client</button>
+                    </div>
+                    
+                    <div class="a2a-platform">
+                        <div class="a2a-platform-icon">
+                            <img src="../assets/images/console-icon.png" alt="Console">
+                        </div>
+                        <h4>Console Gaming</h4>
+                        <p>Connect your console to play compatible Eqic chain games</p>
+                        <button class="btn btn-secondary btn-small">Setup Guide</button>
+                    </div>
+                    
+                    <div class="a2a-platform">
+                        <div class="a2a-platform-icon">
+                            <img src="../assets/images/mobile-icon.png" alt="Mobile">
+                        </div>
+                        <h4>Mobile Gaming</h4>
+                        <p>Play Eqic chain games on your mobile device anytime, anywhere</p>
+                        <button class="btn btn-secondary btn-small">Get App</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Eqic Games</h4>
+                    <p>The world's first AI-driven chain game large model, bridging chain games and traditional gaming ecosystems.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Create</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="governance.html">Governance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Eqic Games. Built on Solana.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../scripts/utils/wallet.js" type="module"></script>
+    <script src="../scripts/explore.js" type="module"></script>
+</body>
+</html> 

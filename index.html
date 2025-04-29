@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eqic Game - Blockchain Gaming Platform</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="description" content="Eqic Game is a blockchain-based gaming platform for creating, exploring, and trading cross-platform game assets.">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="header-logo">
+        <img src="assets/images/logo.svg" alt="Eqic Game Logo">
+        <h1>Eqic Game</h1>
+      </div>
+      <nav class="main-nav">
+        <button id="connectWalletBtn" class="btn btn-primary">Connect Wallet</button>
+        <div id="walletInfo" class="wallet-info">
+          <div id="walletIndicator" class="wallet-indicator wallet-disconnected"></div>
+          <span id="walletAddress">Not connected</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Discover, Create, and Trade Web3 Games</h2>
+          <p>Explore curated blockchain games, create new experiences with AI assistance, and transfer assets across platforms.</p>
+          <div class="hero-search">
+            <input type="text" id="gameSearchInput" placeholder="Search for games...">
+            <button id="searchBtn" class="btn btn-accent">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters-section">
+      <div class="container">
+        <h3>Explore Games</h3>
+        <div class="filters">
+          <div class="filter-group">
+            <label for="genreFilter">Genre</label>
+            <select id="genreFilter">
+              <option value="all">All Genres</option>
+              <option value="rpg">RPG</option>
+              <option value="competitive">Competitive</option>
+              <option value="sandbox">Sandbox</option>
+              <option value="strategy">Strategy</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="complexityFilter">Complexity</label>
+            <select id="complexityFilter">
+              <option value="all">All Levels</option>
+              <option value="simple">Simple</option>
+              <option value="moderate">Moderate</option>
+              <option value="complex">Complex</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="platformFilter">Platform</label>
+            <select id="platformFilter">
+              <option value="all">All Platforms</option>
+              <option value="web3">Web3</option>
+              <option value="pc">PC</option>
+              <option value="mobile">Mobile</option>
+              <option value="console">Console</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="sortFilter">Sort By</label>
+            <select id="sortFilter">
+              <option value="newest">Newest</option>
+              <option value="popular">Most Popular</option>
+              <option value="rating">Highest Rated</option>
+              <option value="played">Most Played</option>
+            </select>
+          </div>
+        </div>
+        <div id="activeFilters" class="active-filters"></div>
+      </div>
+    </section>
+
+    <section class="games-section">
+      <div class="container">
+        <div id="gamesGrid" class="games-grid"></div>
+        <div class="pagination">
+          <button class="btn btn-icon"><span class="icon-arrow-left"></span></button>
+          <div class="pagination-numbers"></div>
+          <button class="btn btn-icon"><span class="icon-arrow-right"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="a2a-section">
+      <div class="container">
+        <h3>Asset-to-Asset Transfers</h3>
+        <p>Transfer your game assets between different blockchain platforms seamlessly.</p>
+        <div class="a2a-platforms">
+          <div class="a2a-platform">
+            <div class="a2a-platform-icon">
+              <img src="assets/images/solana-logo.svg" alt="Solana">
+            </div>
+            <h4>Solana</h4>
+            <p>High-performance blockchain with low transaction costs</p>
+            <button class="btn btn-secondary">Connect</button>
+          </div>
+          <div class="a2a-platform">
+            <div class="a2a-platform-icon">
+              <img src="assets/images/ethereum-logo.svg" alt="Ethereum">
+            </div>
+            <h4>Ethereum</h4>
+            <p>Established blockchain with strong security and widespread adoption</p>
+            <button class="btn btn-secondary">Connect</button>
+          </div>
+          <div class="a2a-platform">
+            <div class="a2a-platform-icon">
+              <img src="assets/images/polygon-logo.svg" alt="Polygon">
+            </div>
+            <h4>Polygon</h4>
+            <p>Ethereum scaling solution with fast and inexpensive transactions</p>
+            <button class="btn btn-secondary">Connect</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About Eqic Game</h4>
+          <p>A blockchain-based gaming platform for creating, exploring, and trading cross-platform game assets.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Explore Games</a></li>
+            <li><a href="#">Create Game</a></li>
+            <li><a href="#">Asset Marketplace</a></li>
+            <li><a href="#">Transfer Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Discord</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Medium</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Eqic Game. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/app.js"></script>
+  <script type="module" src="scripts/explore.js"></script>
+</body>
+</html> 
