@@ -1,13 +1,12 @@
 # <img src="assets/images/logo.png" alt="Eqic Games Logo" width="50" height="50" style="vertical-align: middle;"> Eqic Games - Web3 Gaming Platform
 
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/EqicGames)
-[![Website](https://img.shields.io/badge/Website-0077B5?style=for-the-badge&logo=web&logoColor=white)](https://eqicgame.world)
+[![Twitter](https://x.com/EqicGames)
+[![Website](https://eqicgame.world)
 
 ## Metaverse Creation Protocol (MCP) - The Future of Gaming
 
 Eqic Games is revolutionizing the gaming ecosystem by bridging traditional gaming with blockchain technology through our proprietary **Metaverse Creation Protocol (MCP)**. Our platform enables true asset ownership, cross-platform interoperability, and seamless blockchain integration.
 
-![MCP Architecture](assets/images/mcp-architecture.jpg)
 
 ## Core Technologies
 
