@@ -209,8 +209,6 @@ SOLANA_NETWORK=devnet  # Use mainnet for production
 
 ## Documentation
 
-Comprehensive documentation is available at [docs.eqicgame.world](https://docs.eqicgame.world), including:
-
 - [User API Documentation](docs/api-reference.md)
 - [Asset Integration Guide](docs/asset-integration.md)
 - [User Schema Documentation](docs/user-schema.md)
