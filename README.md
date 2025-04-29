@@ -185,7 +185,7 @@ Eqic Games partners with leading gaming companies to integrate our MCP protocol:
 
 ```bash
 # Clone the repository
-git clone https://github.com/EqicGames/eqic-platform.git
+git clone https://github.com/Eqicgames/EqicGames.git
 
 # Install dependencies
 npm install
