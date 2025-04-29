@@ -1,7 +1,7 @@
 # <img src="assets/images/logo.png" alt="Eqic Games Logo" width="50" height="50" style="vertical-align: middle;"> Eqic Games - Web3 Gaming Platform
 
-[![Twitter](https://x.com/EqicGames)
-[![Website](https://eqicgame.world)
+[Twitter](https://x.com/EqicGames)
+[Website](https://eqicgame.world)
 
 ## Metaverse Creation Protocol (MCP) - The Future of Gaming
 
