@@ -219,7 +219,6 @@ Comprehensive documentation is available at [docs.eqicgame.world](https://docs.e
 
 ## Community
 
-- [Discord](https://discord.gg/eqicgames)
 - [Twitter](https://x.com/EqicGames)
 - [Website](https://eqicgame.world)
 
